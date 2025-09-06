@@ -199,6 +199,8 @@
             border: 1px solid rgba(212, 175, 55, 0.3);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 
                         0 0 30px rgba(212, 175, 55, 0.2);
+            max-height: 90vh;
+            overflow-y: auto;
         }
         .gift-animation {
             width: 150px;
@@ -471,6 +473,7 @@
             
             .reward-content {
                 padding: 25px 20px;
+                max-height: 85vh;
             }
             
             .group-link {
@@ -485,6 +488,25 @@
             
             .reward-message p {
                 font-size: 20px;
+            }
+            
+            /* Custom scrollbar for mobile */
+            .reward-content::-webkit-scrollbar {
+                width: 6px;
+            }
+            
+            .reward-content::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+            
+            .reward-content::-webkit-scrollbar-thumb {
+                background: rgba(212, 175, 55, 0.5);
+                border-radius: 10px;
+            }
+            
+            .reward-content::-webkit-scrollbar-thumb:hover {
+                background: rgba(212, 175, 55, 0.7);
             }
         }
     </style>
@@ -562,10 +584,10 @@
                 <div class="gender-groups">
                     <div class="gender-label">WhatsApp Groups (Choose one based on your gender):</div>
                     <div class="gender-options">
-                        <a href="https://chat.whatsapp.com/KvcEE5sECWTFe41tZB0Ysf?mode=ems_share_t" class="group-link whatsapp-link" target="_blank">
+                        <a href="https://chat.whatsapp.com/YOUR_FEMALE_WHATSAPP_GROUP_LINK" class="group-link whatsapp-link" target="_blank">
                             <i class="fas fa-venus"></i> Female Only
                         </a>
-                        <a href="https://chat.whatsapp.com/HG7nGuKyc2MKjQm78ry0sh?mode=ems_copy_t" class="group-link whatsapp-link" target="_blank">
+                        <a href="https://chat.whatsapp.com/YOUR_MALE_WHATSAPP_GROUP_LINK" class="group-link whatsapp-link" target="_blank">
                             <i class="fas fa-mars"></i> Male Only
                         </a>
                     </div>
@@ -574,7 +596,7 @@
                 <div class="gender-groups">
                     <div class="gender-label">Or join our Telegram group:</div>
                     <div class="gender-options">
-                        <a href="https://t.me/+rhgCTNlouzw3YTE1" class="group-link telegram-link" target="_blank">
+                        <a href="https://t.me/YOUR_TELEGRAM_GROUP_LINK" class="group-link telegram-link" target="_blank">
                             <i class="fab fa-telegram"></i> Telegram Group
                         </a>
                     </div>
